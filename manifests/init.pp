@@ -5,7 +5,8 @@
 #
 # == Parameters
 #
-# None at the moment
+# [*manage*]
+#   Manage hostapd with Puppet. Valid values are 'yes' (default) and 'no'.
 #
 # == Examples
 #
@@ -19,6 +20,12 @@
 #
 # BSD-license. See file LICENSE for details.
 #
-class hostapd {
-    include hostapd::install
+class hostapd
+(
+    $manage = 'yes'
+)
+{
+if $manage == 'yes' {
+    include ::hostapd::install
+}
 }

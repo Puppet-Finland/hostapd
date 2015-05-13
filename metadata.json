@@ -1,0 +1,11 @@
+{
+  "name": "puppetfinland-hostapd",
+  "version": "0.1.1",
+  "author": "Puppet-Finland team",
+  "license": "BSD license",
+  "summary": "Setup hostapd",
+  "source": "https://github.com/Puppet-Finland/hostapd.git",
+  "project_page": "https://github.com/Puppet-Finland/hostapd",
+  "dependencies": [
+  ]
+}

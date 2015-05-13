@@ -3,10 +3,10 @@
 #
 # Install hostapd
 #
-class hostapd::install {
+class hostapd::install inherits hostapd::params {
 
     package { 'hostapd':
-        name => 'hostapd',
         ensure => installed,
+        name   => $::hostapd::params::package_name,
     }
 }
